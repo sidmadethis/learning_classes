@@ -36,3 +36,6 @@ print("My dog is "+ str(my_dog.age)+" years old.")
 
 my_dog.sit()
 my_dog.roll_over()
+
+your_dog = Dog('Lucy', 5)
+your_dog.sit()
