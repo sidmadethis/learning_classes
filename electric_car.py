@@ -29,10 +29,16 @@ class ElectricCar(Car):
     def __init__(self, make, model, year):
         """initialize attributes of the parent class"""
         super().__init__(make, model, year)
+        # making attributes and methods for child class
+        self.battery_size = 70
+
+    def describe_battery(self):
+        """print a statement describing the batter size"""
+        print("this car has a " + str(self.battery_size) + "-kWh battery.")
 
 my_tesla = ElectricCar('tesla', 'model s', 2016)
 print(my_tesla.get_descriptive_name())
-
+my_tesla.describe_battery()
 # note this doesn't work on python2.7, but on python3 it is fine to have super without any arguments.
 
 # this is what it would be in python2.7
